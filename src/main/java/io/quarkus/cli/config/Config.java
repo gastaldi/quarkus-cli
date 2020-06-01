@@ -1,4 +1,4 @@
-package io.quarkus.cli.commands;
+package io.quarkus.cli.config;
 
 import java.net.URI;
 import java.util.List;
@@ -12,10 +12,14 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 public class Config {
 
     @Inject
-    @ConfigProperty(name = "quarkus.cli.registries", defaultValue = "http://localhost:8080")
+    @ConfigProperty(name = "quarkus.cli.registries")
     List<URI> registries;
 
     public List<URI> getRegistries() {
         return registries;
+    }
+
+    public void addRegistry(URI registry) {
+
     }
 }

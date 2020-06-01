@@ -2,7 +2,7 @@ package io.quarkus.cli.commands.registry;
 
 import javax.inject.Inject;
 
-import io.quarkus.cli.commands.Config;
+import io.quarkus.cli.config.Config;
 import picocli.CommandLine;
 
 @CommandLine.Command(name = "list", description = "List the available registries")

@@ -5,7 +5,7 @@ import java.net.URI;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 
-import io.quarkus.cli.commands.Config;
+import io.quarkus.cli.config.Config;
 import io.quarkus.extensions.catalog.model.registry.Registry;
 import io.quarkus.extensions.catalog.model.registry.RegistryBuilder;
 import org.eclipse.microprofile.rest.client.RestClientBuilder;
