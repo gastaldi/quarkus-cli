@@ -15,7 +15,7 @@ public class RegistryProducer {
 
     @Produces
     @ApplicationScoped
-    private Registry setUp(Config config) {
+    Registry setUp(Config config) {
         RegistryBuilder builder = new RegistryBuilder();
         // TODO: Fetch from URL only if not cached locally previously
         for (URI uri : config.getRegistries()) {

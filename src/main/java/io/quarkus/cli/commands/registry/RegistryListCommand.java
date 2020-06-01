@@ -6,7 +6,7 @@ import io.quarkus.cli.commands.Config;
 import picocli.CommandLine;
 
 @CommandLine.Command(name = "list", description = "List the available registries")
-public class ListRegistriesCommand implements Runnable {
+public class RegistryListCommand implements Runnable {
 
     @Inject
     Config config;
