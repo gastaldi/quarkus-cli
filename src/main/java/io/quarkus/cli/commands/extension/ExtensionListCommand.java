@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import javax.inject.Inject;
 
 import io.quarkus.cli.Printer;
-import io.quarkus.cli.commands.extension.completion.VersionCompletionCandidates;
+import io.quarkus.cli.commands.completion.VersionCompletionCandidates;
 import io.quarkus.extensions.catalog.model.registry.Extension;
 import io.quarkus.extensions.catalog.model.registry.Registry;
 import picocli.CommandLine;

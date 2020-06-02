@@ -1,4 +1,4 @@
-package io.quarkus.cli.commands.extension.completion;
+package io.quarkus.cli.commands.completion;
 
 import java.util.Iterator;
 

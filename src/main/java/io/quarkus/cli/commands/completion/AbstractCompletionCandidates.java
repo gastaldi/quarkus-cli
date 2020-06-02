@@ -1,4 +1,4 @@
-package io.quarkus.cli.commands.extension.completion;
+package io.quarkus.cli.commands.completion;
 
 import io.quarkus.arc.Arc;
 import io.quarkus.extensions.catalog.model.registry.Registry;

@@ -1,7 +1,7 @@
 package io.quarkus.cli.commands.extension;
 
 import io.quarkus.cli.Printer;
-import io.quarkus.cli.commands.extension.completion.ExtensionIdCompletionCandidates;
+import io.quarkus.cli.commands.completion.ExtensionIdCompletionCandidates;
 import picocli.CommandLine;
 
 @CommandLine.Command(name = "add", description = "Add an extension to the build descriptor")

@@ -4,6 +4,6 @@ import picocli.CommandLine;
 
 @CommandLine.Command(name = "registry", description = "Registry-based commands",
         mixinStandardHelpOptions = true,
-        subcommands = {RegistryAddCommand.class, RegistryListCommand.class})
+        subcommands = {RegistryListCommand.class})
 public class RegistryCommand {
 }

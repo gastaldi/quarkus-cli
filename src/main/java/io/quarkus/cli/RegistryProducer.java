@@ -1,10 +1,11 @@
-package io.quarkus.cli.commands.registry;
+package io.quarkus.cli;
 
 import java.net.URI;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 
+import io.quarkus.cli.commands.registry.RegistryClient;
 import io.quarkus.cli.config.Config;
 import io.quarkus.extensions.catalog.model.registry.Registry;
 import io.quarkus.extensions.catalog.model.registry.RegistryBuilder;
