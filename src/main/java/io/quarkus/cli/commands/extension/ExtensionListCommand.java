@@ -23,7 +23,7 @@ public class ExtensionListCommand implements Runnable {
             completionCandidates = VersionCompletionCandidates.class)
     String quarkusVersion;
 
-    @CommandLine.Unmatched
+    @CommandLine.Parameters
     List<String> keyword;
 
     @Inject
