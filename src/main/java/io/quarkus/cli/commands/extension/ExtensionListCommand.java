@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import javax.inject.Inject;
 
 import io.quarkus.cli.Printer;
-import io.quarkus.cli.commands.ListExtensions;
+import io.quarkus.cli.commands.extension.completion.VersionCompletionCandidates;
 import io.quarkus.extensions.catalog.model.registry.Extension;
 import io.quarkus.extensions.catalog.model.registry.Registry;
 import picocli.CommandLine;
@@ -19,7 +19,8 @@ public class ExtensionListCommand implements Runnable {
 
     private static final String CONCISE_FORMAT = "%-50s %-50s";
 
-    @CommandLine.Option(names = {"-v", "--version"}, description = "The quarkus version to be used")
+    @CommandLine.Option(names = {"-v", "--version"}, description = "The quarkus version to be used",
+            completionCandidates = VersionCompletionCandidates.class)
     String quarkusVersion;
 
     @CommandLine.Unmatched
@@ -51,4 +52,5 @@ public class ExtensionListCommand implements Runnable {
             list.forEach(System.out::println);
         }
     }
+
 }
